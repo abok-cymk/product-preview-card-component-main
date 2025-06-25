@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    src: url("/src/assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    src: url("/src/assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+:root {
+  /* Button and Currect price */
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+
+  --Black: hsl(212, 21%, 14%); /* Heading */
+  --Grey: hsl(228, 12%, 48%);  /* Category, paragraph and original strikethrough price*/
+  --Cream: hsl(30, 38%, 92%);  /* Body bg */
+  --White: hsl(0, 0%, 100%);  /*Product metadata bg and button text*/
+
+  --fs: 0.875rem;
+}

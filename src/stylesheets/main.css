@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--Cream);
+  display: grid;
+  height: 100vh;
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.product-container {
+  background-color: var(--White);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  border-radius: 0.8rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 28rem) {
+  .product-image {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+}
+
+.product-metadata {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+}
+
+.product-category {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--Grey);
+}
+
+.product-name {
+  color: var(--Black);
+  font-size: 3rem;
+  line-height: 110%;
+  padding-block: 1rem;
+}
+
+.product-description {
+  color: var(--Grey);
+  font-size: var(--fs);
+  text-wrap: balance;
+}
+
+.product__price-wrapper {
+  padding-block: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.product__current-price {
+  color: var(--Green-500);
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+
+.product-name,
+.product__current-price {
+  font-family: "Fraunces", serif;
+}
+
+.product__original-price {
+  text-decoration-line: line-through;
+  color: var(--Grey);
+  opacity: 70%;
+  font-size: var(--fs);
+}
+
+button {
+  background-color: var(--Green-500);
+  transition: background-color 300ms linear;
+  color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+}
+
+button:is(:hover, :focus-visible) {
+  background-color: var(--Green-700);
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    place-items: center;
+    padding-block: 0;
+  }
+
+  .product-container {
+    max-width: 48rem;
+    margin-inline: auto;
+    gap: 2rem;
+  }
+
+  .product-image {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+  }
+
+  .product-metadata {
+    padding-top: 3rem;
+  }
+}
