@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./product-preview-screenshot.jpeg)
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/abok-cymk/product-preview-card-component-main)
+- Live Site URL: [live site URL](https://abok-cymk.github.io/product-preview-card-component-main/)
 
 ## My process
 
